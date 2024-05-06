@@ -31,7 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func initTabController()
 	{
 		let redVc = RedController()
+		redVc.topTitleText = "RedController"
+		redVc.backgroundColor = UIColor(red: 243/255, green: 51/255, blue: 51/255, alpha: 1)
+
 		let greenVc = GreenController()
+		greenVc.topTitleText = "GreenController"
+		greenVc.backgroundColor = UIColor(red: 5/255, green: 218/255, blue: 104/255, alpha: 1)
 		
 		redVc.tabBarItem = UITabBarItem(title: "RED", image: nil, selectedImage: nil)
 		greenVc.tabBarItem = UITabBarItem(title: "GREEN", image: nil, selectedImage: nil)
@@ -41,30 +46,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		tabController.viewControllers = [redVc, greenVc]
 		
 		navigationController.pushViewController(tabController, animated: false)
-	}
-}
-
-
-extension UIImage {
-	func setColor(_ color1: UIColor) -> UIImage
-	{
-		return autoreleasepool(invoking: { [weak self] () -> UIImage in
-			UIGraphicsBeginImageContextWithOptions(self!.size, false, self!.scale)
-			color1.setFill()
-			
-			let context = UIGraphicsGetCurrentContext()
-			context?.translateBy(x: 0, y: self!.size.height)
-			context?.scaleBy(x: 1.0, y: -1.0)
-			context?.setBlendMode(CGBlendMode.normal)
-			
-			let rect = CGRect(origin: .zero, size: CGSize(width: self!.size.width, height: self!.size.height))
-			context?.clip(to: rect, mask: self!.cgImage!)
-			context?.fill(rect)
-			
-			let newImage = UIGraphicsGetImageFromCurrentImageContext()
-			UIGraphicsEndImageContext()
-			
-			return newImage!
-		})
 	}
 }

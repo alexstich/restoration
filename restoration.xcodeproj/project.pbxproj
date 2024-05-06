@@ -12,6 +12,7 @@
 		FA8C5E8B2BE8EFC800EB457C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8C5E892BE8EFC800EB457C /* LaunchScreen.storyboard */; };
 		FAF3DFD12BE8F65D00C33EC6 /* RedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3DFD02BE8F65C00C33EC6 /* RedController.swift */; };
 		FAF3DFD32BE8F88E00C33EC6 /* GreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3DFD22BE8F88E00C33EC6 /* GreenController.swift */; };
+		FAF3DFD52BE92AFD00C33EC6 /* CustomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3DFD42BE92AFD00C33EC6 /* CustomController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA8C5E8C2BE8EFC800EB457C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF3DFD02BE8F65C00C33EC6 /* RedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedController.swift; sourceTree = "<group>"; };
 		FAF3DFD22BE8F88E00C33EC6 /* GreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenController.swift; sourceTree = "<group>"; };
+		FAF3DFD42BE92AFD00C33EC6 /* CustomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				FA8C5E7E2BE8EFC500EB457C /* AppDelegate.swift */,
 				FAF3DFD02BE8F65C00C33EC6 /* RedController.swift */,
 				FAF3DFD22BE8F88E00C33EC6 /* GreenController.swift */,
+				FAF3DFD42BE92AFD00C33EC6 /* CustomController.swift */,
 				FA8C5E872BE8EFC800EB457C /* Assets.xcassets */,
 				FA8C5E892BE8EFC800EB457C /* LaunchScreen.storyboard */,
 				FA8C5E8C2BE8EFC800EB457C /* Info.plist */,
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF3DFD52BE92AFD00C33EC6 /* CustomController.swift in Sources */,
 				FAF3DFD32BE8F88E00C33EC6 /* GreenController.swift in Sources */,
 				FA8C5E7F2BE8EFC500EB457C /* AppDelegate.swift in Sources */,
 				FAF3DFD12BE8F65D00C33EC6 /* RedController.swift in Sources */,
